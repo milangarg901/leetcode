@@ -1,42 +1,53 @@
-﻿# LeetCode Interview Practice
+﻿# LeetCode DSA in C++
 
-Curated LeetCode solutions prepared for interview practice and revision.
+Structured LeetCode practice for coding interviews, organized topic-wise.
 
-## Repository Goals
+## Focus
 
-- Build strong problem-solving patterns for coding interviews
-- Keep solutions clean, readable, and easy to revise
-- Track progress consistently
+- Interview-oriented problem solving
+- Clean and readable C++ solutions
+- Consistent revision by topic
 
-## Structure
+## Repository Structure
 
 ```text
 leetcode/
-  problems/
-    easy/
-    medium/
-    hard/
+  topics/
+    01-arrays/
+    02-strings/
+    03-hashing/
+    ...
+    34-meet-in-the-middle/
 ```
 
-## File Naming
+## How Solutions Are Organized
 
-Use this format for each solution file:
-
-`####-problem-title.ext`
+- Folder: by DSA topic under `topics/`
+- File name format: `####-problem-title.cpp`
 
 Examples:
 - `0001-two-sum.cpp`
-- `0121-best-time-to-buy-and-sell-stock.cpp`
+- `0238-product-of-array-except-self.cpp`
 
-## Progress Tracker
+## Suggested Solution Template
 
-| Difficulty | Solved |
-|------------|--------|
-| Easy       | 0      |
-| Medium     | 0      |
-| Hard       | 0      |
+For each file, keep this order:
+1. Problem link/name (short comment)
+2. Approach summary (2-4 lines)
+3. Time and space complexity
+4. Final C++ implementation
 
-## Notes
+## Progress
 
-- Primary language: C++
-- Focus: interview-ready approaches with clear complexity tradeoffs
+Total solved: `0`  
+Primary language: `C++`
+
+I will update counts and add solved files topic-wise over time.
+
+## Quick Workflow
+
+```bash
+git add .
+git commit -m "Add: 0001 two-sum (arrays)"
+git push
+```
