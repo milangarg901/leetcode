@@ -1,29 +1,21 @@
 ﻿#include <bits/stdc++.h>
 using namespace std;
 
-/*
-LeetCode 1. Two Sum
-https://leetcode.com/problems/two-sum/
+using ll = long long;
+const ll MOD = 1e9 + 7;
+const ll INF = 1e18;
 
-Approach:
-- Iterate once through the array.
-- For each value x, look for (target - x) in a hash map.
-- If found, return the stored index and current index.
-
-Time: O(n)
-Space: O(n)
-*/
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> index_of;
-        for (int i = 0; i < (int)nums.size(); ++i) {
+        unordered_map<int,int> mp;
+        int n = nums.size();
+        for(int i = 0; i < n; i++){
             int need = target - nums[i];
-            auto it = index_of.find(need);
-            if (it != index_of.end()) {
-                return {it->second, i};
+            if(mp.find(need) != mp.end()){
+                return {mp[need], i};
             }
-            index_of[nums[i]] = i;
+            mp[nums[i]] = i;
         }
         return {};
     }
