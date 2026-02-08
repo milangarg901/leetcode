@@ -1,4 +1,14 @@
-﻿#include <bits/stdc++.h>
+﻿/*
+LeetCode 1. Two Sum
+Approach:
+- Traverse array once and store seen value -> index in hash map.
+- For each nums[i], check whether (target - nums[i]) was seen.
+- If found, return stored index and current index.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
+#include <bits/stdc++.h>
 using namespace std;
 
 using ll = long long;
