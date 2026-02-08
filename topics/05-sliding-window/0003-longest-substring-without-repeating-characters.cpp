@@ -1,4 +1,14 @@
-﻿class Solution {
+﻿/*
+LeetCode 3. Longest Substring Without Repeating Characters
+Approach:
+- Use sliding window [i..j).
+- Expand j while character is not repeated in current window.
+- If repeated, shrink from left by moving i.
+
+Time Complexity: O(n)
+Space Complexity: O(1)  // fixed-size freq array (256)
+*/
+class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
         int n = s.size();
@@ -24,4 +34,3 @@ public:
         return ans;
     }
 };
-
